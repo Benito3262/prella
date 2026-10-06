@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Prella · Content · Social · Community</title>
+<meta name="description" content="Prella (@just_prella). Content writer, social media manager, and community builder. Open for work." />
+<meta property="og:image" content="assets/avatar.jpg" />
+<style>
+  :root { --bg:#fff5f8; --card:#fff; --card2:#ffe4ee; --line:#f3c6d8; --gold:#db2777; --gold2:#be185d; --text:#2a1020; --mute:#7a4d62; --soft:#c08aa0; }
+  [data-theme="dark"] { --bg:#1a0d14; --card:#2a1520; --card2:#3a1c2b; --line:#5a3044; --gold:#f472b6; --gold2:#f9a8d4; --text:#fff5f8; --mute:#e7c3d3; --soft:#a87890; }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  body { font-family:Inter,system-ui,sans-serif; background:var(--bg); color:var(--text); line-height:1.55; }
+  .wrap { width:min(1080px, calc(100% - 36px)); margin:0 auto; }
+  a { color:inherit; text-decoration:none; } img { display:block; max-width:100%; }
+  header { position:sticky; top:0; z-index:20; background:color-mix(in srgb, var(--bg) 88%, transparent); backdrop-filter:blur(14px); border-bottom:1px solid var(--line); }
+  .nav { display:flex; align-items:center; justify-content:space-between; padding:14px 0; }
+  .logo { letter-spacing:.2em; font-size:12px; color:var(--gold2); font-weight:700; }
+  nav { display:flex; gap:18px; align-items:center; font-size:13px; color:var(--mute); }
+  .tog { border:1px solid var(--line); background:transparent; color:var(--mute); border-radius:999px; padding:6px 12px; font-size:11px; letter-spacing:.08em; text-transform:uppercase; cursor:pointer; }
+  .hero { display:grid; grid-template-columns:1.15fr .85fr; gap:48px; align-items:center; padding:72px 0 48px; }
+  .avail { color:var(--gold2); font-size:12px; letter-spacing:.16em; text-transform:uppercase; margin-bottom:18px; font-weight:700; }
+  h1 { font-size:clamp(56px, 9vw, 96px); font-weight:800; letter-spacing:-.05em; line-height:.88; margin-bottom:14px; }
+  .sub, .lead, .stat span, .card p, .work p { color:var(--mute); }
+  .sub { margin-bottom:22px; } .sub b { color:var(--gold); }
+  .obj { max-width:540px; border-left:3px solid var(--gold); background:rgba(219,39,119,.08); padding:16px 18px; border-radius:0 12px 12px 0; }
+  .obj small { display:block; color:var(--gold2); letter-spacing:.14em; font-size:11px; text-transform:uppercase; margin-bottom:6px; font-weight:700; }
+  .row { display:flex; flex-wrap:wrap; gap:10px; margin-top:26px; }
+  .btn { display:inline-flex; border-radius:999px; padding:11px 18px; font-size:14px; font-weight:600; border:1px solid var(--line); background:var(--card); }
+  .fill { background:var(--gold); color:#fff; border-color:var(--gold); }
+  .portrait, .stat, .card, .work { background:var(--card); border:1px solid var(--line); border-radius:18px; }
+  .portrait { padding:14px; border-radius:28px; }
+  .portrait img { width:100%; border-radius:20px; aspect-ratio:1; object-fit:cover; }
+  .chips { display:flex; flex-wrap:wrap; gap:8px; margin-top:14px; }
+  .chip { font-size:12px; color:var(--gold2); border:1px solid var(--line); border-radius:999px; padding:6px 10px; font-weight:600; }
+  section { padding:28px 0 8px; }
+  .kicker { color:var(--gold2); letter-spacing:.14em; font-size:12px; font-weight:700; margin-bottom:8px; }
+  h2 { font-size:clamp(28px, 4vw, 40px); letter-spacing:-.04em; margin-bottom:12px; }
+  .lead { max-width:720px; margin-bottom:18px; }
+  .stats, .grid2, .grid3 { display:grid; gap:12px; }
+  .stats { grid-template-columns:repeat(3,1fr); } .grid2 { grid-template-columns:1fr 1fr; } .grid3 { grid-template-columns:repeat(3,1fr); }
+  .stat, .card, .work { padding:18px; }
+  .stat strong { display:block; font-size:28px; }
+  .work { margin-bottom:12px; }
+  .work a { color:var(--gold); font-weight:600; font-size:13px; display:inline-block; margin-top:12px; }
+  .shot { border-radius:14px; border:1px solid var(--line); margin-top:12px; width:100%; }
+  .quote { margin:22px 0; padding:22px; border-radius:18px; background:var(--card2); border:1px solid var(--line); font-size:18px; }
+  .quote small { display:block; margin-top:8px; color:var(--mute); font-size:13px; }
+  .hire { text-align:center; padding:42px 0 64px; }
+  footer { border-top:1px solid var(--line); color:var(--soft); font-size:13px; display:flex; justify-content:space-between; padding:18px 0 28px; }
+  @media (max-width:800px) { .hero, .grid3, .grid2, .stats { grid-template-columns:1fr; } nav a { display:none; } }
+</style>
+</head>
+<body>
+<header><div class="wrap nav"><a class="logo" href="#top">PRELLA</a><nav><a href="#work">Work</a><a href="#hire">Hire</a><button class="tog" id="theme" type="button">Dark</button></nav></div></header>
+<main class="wrap">
+  <section class="hero">
+    <div>
+      <p class="avail">Open for work</p>
+      <h1>Prella</h1>
+      <p class="sub">Writer <b>·</b> Social <b>·</b> Community</p>
+      <div class="obj"><small>// objective_</small>I help Web3 projects turn ideas into content, conversations, and visibility.</div>
+      <div class="row"><a class="btn fill" href="https://x.com/just_prella" target="_blank" rel="noopener">DM on X</a><a class="btn" href="https://t.me/prella_crypt" target="_blank" rel="noopener">Telegram</a></div>
+    </div>
+    <div class="portrait"><img src="assets/avatar.jpg" alt="Prella" /><div class="chips"><span class="chip">@just_prella</span><span class="chip">2.1K on X</span><span class="chip">Prella Crypt</span></div></div>
+  </section>
+  <section>
+    <p class="kicker">// about_</p><h2>Who I am</h2>
+    <p class="lead">Content writer, social media manager, and community builder. I write the post, run the page, and stay in the room. Contributor at Smart Sentinels.</p>
+    <p class="lead">Open for content, social management, and community seats.</p>
+    <div class="stats"><div class="stat"><strong>2.1K</strong><span>X followers</span></div><div class="stat"><strong>110</strong><span>Likes on Tsera</span></div><div class="stat"><strong>2.1K</strong><span>Views on that thread</span></div></div>
+  </section>
+  <section>
+    <p class="kicker">// what you are hiring_</p><h2>What I offer</h2>
+    <div class="grid3">
+      <article class="card"><h3>Writing</h3><p>Storytelling, research threads, and educational posts. The product, in a sentence people finish.</p></article>
+      <article class="card"><h3>Social</h3><p>X content strategy and management. The page stays alive after the first post.</p></article>
+      <article class="card"><h3>Community</h3><p>Management, engagement, and campaigns. Awareness that turns into a room.</p></article>
+    </div>
+  </section>
+  <section id="work">
+    <p class="kicker">// selected work_</p><h2>Proof of work</h2>
+    <div class="grid2">
+      <article class="work"><p class="kicker">TSERA · 110 LIKES</p><h3>Where did the money go</h3><p>Wallet activity turned into spending, income, swaps, and P&L. 69 replies, 2.1K views.</p><img class="shot" src="https://pbs.twimg.com/media/HSqemAzWoAEAt-w.jpg" alt="Tsera thread" /><a href="https://x.com/just_prella/status/2101666564458115201" target="_blank" rel="noopener">Open thread →</a></article>
+      <article class="work"><p class="kicker">MEXC · RESEARCH</p><h3>VVIP is not a rope</h3><p>Zero-threshold entry, then the cashback math. Standard 4%, Premier 6%, Elite 10%. 34 likes.</p><img class="shot" src="https://pbs.twimg.com/media/HS6cvxfbMAAe2_4.jpg" alt="MEXC post" /><a href="https://x.com/just_prella/status/2102790424142532696" target="_blank" rel="noopener">Open post →</a></article>
+      <article class="work"><p class="kicker">PROPLANNER</p><h3>Social media management</h3><p>Content and growth work for the project. The write-up is in the doc.</p><a href="https://docs.google.com/document/d/11LuOe425SBUk6QgR4OFbc61G5lScmsdQrMldDuQLhu4/edit" target="_blank" rel="noopener">Open the doc →</a></article>
+      <article class="work"><p class="kicker">MAAVATAR</p><h3>Community and ambassador</h3><p>Community building, content, and campaign participation.</p><a href="https://docs.google.com/document/d/1yuyl5LX8gAu7XBwVErBKNnpgJFgqRi-kGCzZu1ZUdpk/edit" target="_blank" rel="noopener">Open the doc →</a></article>
+    </div>
+    <article class="work"><p class="kicker">MIDDLEMINT</p><h3>Community and content</h3><p>Web3 community and social media management. The longer case sits in the Notion portfolio.</p><a href="https://tourmaline-fox-fca.notion.site/Peace-Monday-PRELLA-Portfolio-38458924b71c8064b4a4c423d37e8073" target="_blank" rel="noopener">Open the Notion →</a></article>
+    <div class="quote">“What actually happened to my money?”<small>From the Tsera thread. The research comes first. The line comes after.</small></div>
+  </section>
+  <section class="hire" id="hire">
+    <p class="kicker">// let’s work_</p><h2>Open for work</h2>
+    <p class="lead">Content, social, or community.</p>
+    <div class="row" style="justify-content:center"><a class="btn fill" href="https://x.com/just_prella">@just_prella</a><a class="btn" href="https://t.me/prella_crypt">t.me/prella_crypt</a></div>
+  </section>
+</main>
+<footer class="wrap"><span>Prella</span><span>@just_prella · t.me/prella_crypt</span></footer>
+<script>const btn=document.getElementById("theme");btn.onclick=()=>{const d=document.body.dataset.theme==="dark";document.body.dataset.theme=d?"":"dark";btn.textContent=d?"Dark":"Light";};</script>
+</body>
+</html>
